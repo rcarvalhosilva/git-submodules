@@ -28,4 +28,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "aruba"
 
   spec.add_dependency "thor"
+  spec.add_dependency "fileutils"
 end

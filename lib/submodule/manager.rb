@@ -1,3 +1,5 @@
+require "fileutils"
+
 module Submodule
   class Manager
     def self.init()
@@ -23,6 +25,13 @@ module Submodule
       puts `git submodule sync --recursive`
       puts `git submodule update --init --recursive`
       puts "Submodules ready"
+    end
+
+    def self.remove(submodule_name)
+      puts `git submodule deinit -f Dependencies/#{submodule_name}`
+      puts `rm -rf .git/modules/Dependencies/#{submodule_name}`
+      puts `git rm -f Dependencies/#{submodule_name}`
+      FileUtils.rm_rf("Dependencies/#{submodule_name}")
     end
   end
 end

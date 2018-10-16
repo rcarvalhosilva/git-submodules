@@ -22,5 +22,10 @@ module Submodule
     def boot(submodule_name, tag)
       puts Submodule::Manager.boot()
     end
+
+    desc "remove <dependecy name>", "removes a submodule dependency"
+    def remove(submodule_name)
+      puts Submodule::Manager.remove(submodule_name)
+    end
   end
 end

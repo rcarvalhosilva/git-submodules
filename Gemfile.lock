@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     git-sbm (0.1.0)
+      fileutils
       thor
 
 GEM
