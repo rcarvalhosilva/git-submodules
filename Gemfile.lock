@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    submodule (0.1.0)
+    git-sbm (0.1.0)
       thor
 
 GEM
@@ -65,9 +65,9 @@ DEPENDENCIES
   bundler (~> 1.16)
   cucumber
   fileutils
+  git-sbm!
   rake (~> 10.0)
   rspec (~> 3.2)
-  submodule!
 
 BUNDLED WITH
    1.16.1

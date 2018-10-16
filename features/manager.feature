@@ -4,6 +4,6 @@ Feature: Manager
   I want to be as objective as possible
 
   Scenario: Initialize dependencies
-    When I run `submodule init`
+    When I run `git-sbm init`
     Then the output should contain "Dependencies folder created!"
     And the directory "Dependencies" should exist

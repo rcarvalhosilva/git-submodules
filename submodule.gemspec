@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "submodule/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "submodule"
+  spec.name          = "git-sbm"
   spec.version       = Submodule::VERSION
   spec.authors       = ["Rodrigo Carvalho"]
   spec.email         = ["rcdasilva94@gmail.com"]
