@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    git-sbm (0.2.1)
+    git-sbm (0.2.2)
       fileutils
       thor
 
