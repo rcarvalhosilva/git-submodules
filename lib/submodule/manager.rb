@@ -31,7 +31,6 @@ module Submodule
       puts `git submodule deinit -f Dependencies/#{submodule_name}`
       puts `rm -rf .git/modules/Dependencies/#{submodule_name}`
       puts `git rm -f Dependencies/#{submodule_name}`
-      FileUtils.rm_rf("Dependencies/#{submodule_name}")
     end
   end
 end
