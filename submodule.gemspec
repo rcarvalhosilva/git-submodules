@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Rodrigo Carvalho"]
   spec.email         = ["rcdasilva94@gmail.com"]
   spec.platform         = Gem::Platform::RUBY
-
+  spec.license = 'MIT'
   spec.summary       = %q{A tool to help manage git submodules}
   spec.homepage      = "https://github.com/rcarvalhosilva/git-submodules"
 
