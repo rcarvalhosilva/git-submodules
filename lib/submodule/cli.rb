@@ -19,7 +19,7 @@ module Submodule
     end
 
     desc "boot", "update and clone all registered submodules"
-    def boot(submodule_name, tag)
+    def boot()
       puts Submodule::Manager.boot()
     end
 
