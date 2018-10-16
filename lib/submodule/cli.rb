@@ -12,5 +12,10 @@ module Submodule
     def add(submodule_name, url)
       puts Submodule::Manager.add_dependency(submodule_name, url)
     end
+
+    desc "git-sbm update <dependecy name> <version tag>", "update a dependency to the specified tag"
+    def update(submodule_name, tag)
+      puts Submodule::Manager.update_dependency(submodule_name, tag)
+    end
   end
 end
