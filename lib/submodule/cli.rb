@@ -18,7 +18,7 @@ module Submodule
       puts Submodule::Manager.update_dependency(submodule_name, tag)
     end
 
-    desc "boot", "clone and update all registered submodules"
+    desc "boot", "update and clone all registered submodules"
     def boot(submodule_name, tag)
       puts Submodule::Manager.boot()
     end
