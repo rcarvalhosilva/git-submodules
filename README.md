@@ -1,34 +1,52 @@
-# Submodule
+# Git-Submodules
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/submodule`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to Git-Submodules!
+Git-Submodules is a simple tool with the goal of making your workflow with submodules a little bit easier.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+The recommended way of installing is through Bundler. Add the following to your Gemfile:
 
 ```ruby
-gem 'submodule'
+gem 'git-sbm'
 ```
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install submodule
+    $ bundle install
 
 ## Usage
 
-TODO: Write usage instructions here
+# Initializing
+When first integrating Git-Submodules to your project run the following command:
 
-## Development
+`$ bundle exec git-sbm init`
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+This way the dependencies folder will be created. That's the folder where your submodules will be checked out. All the following commands should run from the "Dependencies" parent folder from now on.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+# Adding a dependency
+To add a dependency just run
+
+`$ bundle exec git-sbm add <dependecy name> <submodule url>`
+
+# Update a dependency to a specific version
+To set a dependency to a specific version run
+
+`$ bundle exec git-sbm update <dependecy name> <version tag>`
+
+This will create a commit with the update
+
+# Sync dependencies
+To sync your dependencies just run
+
+`$ bundle exec git-sbm boot`
+
+You should run this command after you cloned a git repo that has submodules (e.g on your C.I.), when someone in your team update a dependency or change the remote url
+
+# Remove dependency
+To remove a dependency just run
+
+`$ bundle exec git-sbm remove <dependecy name>`
 
 ## Contributing
 
