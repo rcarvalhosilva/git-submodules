@@ -1,4 +1,5 @@
 # Git-Submodules
+[![Gem Version](https://badge.fury.io/rb/git-sbm.svg)](https://badge.fury.io/rb/git-sbm)
 
 Welcome to Git-Submodules!
 Git-Submodules is a simple tool with the goal of making your workflow with submodules a little bit easier.
