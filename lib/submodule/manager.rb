@@ -18,5 +18,11 @@ module Submodule
       puts `git commit -am "Updated submodule #{submodule_name} to #{tag}"`
       puts "Updated submodule #{submodule_name} to #{tag}"
     end
+
+    def self.boot()
+      puts `git submodule sync --recursive`
+      puts `git submodule update --init --recursive`
+      puts "Submodules ready"
+    end
   end
 end
