@@ -17,33 +17,33 @@ And then execute:
 
 ## Usage
 
-# Initializing
+### Initializing
 When first integrating Git-Submodules to your project run the following command:
 
 `$ bundle exec git-sbm init`
 
 This way the dependencies folder will be created. That's the folder where your submodules will be checked out. All the following commands should run from the "Dependencies" parent folder from now on.
 
-# Adding a dependency
+### Adding a dependency
 To add a dependency just run
 
 `$ bundle exec git-sbm add <dependecy name> <submodule url>`
 
-# Update a dependency to a specific version
+### Update a dependency to a specific version
 To set a dependency to a specific version run
 
 `$ bundle exec git-sbm update <dependecy name> <version tag>`
 
 This will create a commit with the update
 
-# Sync dependencies
+### Sync dependencies
 To sync your dependencies just run
 
 `$ bundle exec git-sbm boot`
 
 You should run this command after you cloned a git repo that has submodules (e.g on your C.I.), when someone in your team update a dependency or change the remote url
 
-# Remove dependency
+### Remove dependency
 To remove a dependency just run
 
 `$ bundle exec git-sbm remove <dependecy name>`
